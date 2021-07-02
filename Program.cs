@@ -11,7 +11,7 @@ namespace Fundamentos
             fname = Console.ReadLine();
             Console.Write("Enter your last name: ");
             lname = Console.ReadLine();
-            Console.WriteLine("Your name is {0} {1}.", fname, lname);
+            Console.WriteLine($"Your name is {fname} {lname}.");
         }
     }
 }
