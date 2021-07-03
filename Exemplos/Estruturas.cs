@@ -13,5 +13,23 @@ namespace Fundamentos.Exemplos
 
             Console.WriteLine(numA + numB + numC + numD);
         }
+
+        static void InstrucaoIf(string[] args)
+        {
+            if (args.Length == 0)
+            {
+                Console.WriteLine('0 argumentos')
+            }
+            else if (args.Length == 1)
+            {
+                Console.WriteLine('1 argumento')
+            }
+            else
+            {
+                Console.WriteLine($'{args.Length} argumentos')
+            }
+        }
+
+        static void InstrucaoSwitch(string[] args)
     }
 }
