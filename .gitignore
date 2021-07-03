@@ -1,4 +1,4 @@
 .vscode/
 bin/
 obj/
-Funtamentos.csproj
+*.csproj
