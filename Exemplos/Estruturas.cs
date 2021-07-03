@@ -4,9 +4,14 @@ namespace Fundamentos.Exemplos
 {
     class Estruturas
     {
-        static void Main(string[] args)
+        static void Declaracoes()
         {
-            Console.WriteLine('Hello World');
+            int numA;
+            int numB = 2, numC = 3;
+            const int numD = 4;
+            numA = 1;
+
+            Console.WriteLine(numA + numB + numC + numD);
         }
     }
 }
