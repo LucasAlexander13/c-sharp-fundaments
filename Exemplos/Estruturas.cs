@@ -18,18 +18,33 @@ namespace Fundamentos.Exemplos
         {
             if (args.Length == 0)
             {
-                Console.WriteLine('0 argumentos')
+                Console.WriteLine("Nenhum argumento")
             }
             else if (args.Length == 1)
             {
-                Console.WriteLine('1 argumento')
+                Console.WriteLine("1 argumento")
             }
             else
             {
-                Console.WriteLine($'{args.Length} argumentos')
+                Console.WriteLine($"{args.Length} argumentos")
             }
         }
 
         static void InstrucaoSwitch(string[] args)
+        {
+            int numArgs = args.Length;
+            switch(numArgs)
+            {
+                case 0:
+                    Console.WriteLine("Nenhum argumento");
+                    break;
+                case 1:
+                    Console.WriteLine("1 argumento");
+                    break;
+                default:
+                    Console.WriteLine($"{numArgs} argumentos");
+                    break;
+            }
+        }
     }
 }
