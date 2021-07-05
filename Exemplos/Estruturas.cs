@@ -46,5 +46,15 @@ namespace Fundamentos.Exemplos
                     break;
             }
         }
+
+        static void InstrucaoWhile(string[] args)
+        {
+            int i = 0;
+            while (i < args.Length)
+            {
+                Console.WriteLine(args[i]);
+                i++;
+            }
+        }
     }
 }
