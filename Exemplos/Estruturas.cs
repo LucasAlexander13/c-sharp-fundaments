@@ -17,17 +17,11 @@ namespace Fundamentos.Exemplos
         static void InstrucaoIf(string[] args)
         {
             if (args.Length == 0)
-            {
-                Console.WriteLine("Nenhum argumento")
-            }
+                Console.WriteLine("Nenhum argumento");
             else if (args.Length == 1)
-            {
-                Console.WriteLine("1 argumento")
-            }
+                Console.WriteLine("1 argumento");
             else
-            {
-                Console.WriteLine($"{args.Length} argumentos")
-            }
+                Console.WriteLine($"{args.Length} argumentos");
         }
 
         static void InstrucaoSwitch(string[] args)
@@ -70,17 +64,13 @@ namespace Fundamentos.Exemplos
         static void InstrucaoFor(string[] args)
         {
             for (int i = 0; i < args.Length; i++)
-            {
                 Console.WriteLine(args[i]);
-            }
         }
 
         static void InstrucaoForeach(string[] args)
         {
             foreach (string str in args)
-            {
                 Console.WriteLine(str);
-            }
         }
 
         static void InstrucaoBreak(string[] args)
@@ -90,9 +80,7 @@ namespace Fundamentos.Exemplos
                 string str = Console.ReadLine();
 
                 if (string.IsNullOrEmpty(str))
-                {
                     break;
-                }
 
                 Console.WriteLine(str);
             }
@@ -103,9 +91,7 @@ namespace Fundamentos.Exemplos
             for (int i = 0; i < args.Length; i++)
             {
                 if (args[i].StartsWith("/"))
-                {
                     continue;
-                }
                 
                 Console.WriteLine(args[i]);
             }
