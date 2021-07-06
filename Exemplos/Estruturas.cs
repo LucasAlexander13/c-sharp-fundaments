@@ -74,6 +74,14 @@ namespace Fundamentos.Exemplos
                 Console.WriteLine(args[i]);
             }
         }
-        
+
+        static void InstrucaoForeach(string[] args)
+        {
+            foreach (string str in args)
+            {
+                Console.WriteLine(str);
+            }
+        }
+
     }
 }
