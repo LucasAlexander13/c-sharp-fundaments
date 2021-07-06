@@ -83,5 +83,20 @@ namespace Fundamentos.Exemplos
             }
         }
 
+        static void InstrucaoBreak(string[] args)
+        {
+            while (true)
+            {
+                string str = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(str))
+                {
+                    break;
+                }
+
+                Console.WriteLine(str);
+            }
+        }
+
     }
 }
