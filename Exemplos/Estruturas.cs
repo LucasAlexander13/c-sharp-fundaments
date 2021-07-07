@@ -159,5 +159,15 @@ namespace Fundamentos.Exemplos
             }
         }
 
+        static void InstrucaoUsing(string[] args)
+        {
+            using (System.IO.TextWriter w = System.IO.File.CreateText("teste.txt"))
+            {
+                w.WriteLine("Line 1");
+                w.WriteLine("Line 2");
+                w.WriteLine("Line 3");
+            }
+        }
+
     }
 }
